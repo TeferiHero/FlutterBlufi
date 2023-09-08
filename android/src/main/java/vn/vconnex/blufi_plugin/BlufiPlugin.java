@@ -466,7 +466,7 @@ public class BlufiPlugin implements FlutterPlugin, ActivityAware, MethodCallHand
         status = 1;
       }
       String ssid = response.getStaSSID();
-      return "{ \"status\": " + status.toString() + ", \"ssid\": \"" + ssid +"\"}";
+      return "{ \"status\": " + status + ", \"ssid\": \"" + ssid +"\"}";
     }
 
     @Override
