@@ -206,16 +206,23 @@
    
     if (status == StatusSuccess) {
         [self updateMessage:[self makeJsonWithCommand:@"device_status" data:@"1"]];
-        
-        if ([response isStaConnectWiFi]) {
-          [self updateMessage:[self makeJsonWithCommand:@"device_wifi_connect" data:@"1"]];
-        } else {
-                [self updateMessage:[self makeJsonWithCommand:@"device_wifi_connect" data:@"0"]];
-      }
+        [self updateMessage:[self makeJsonWithCommand:@"device_wifi_connect" data: [self makeWifiStatusJson: response] ]];
     } else {
         [self updateMessage:[self makeJsonWithCommand:@"device_status" data:@"0"]];
+        [self updateMessage:[self makeJsonWithCommand:@"device_wifi_connect" data: "{\"status\": -1, \"ssid\": \"\"}" ]];
     }
 }
+
+-(NSString *)makeWifiStatusJson:(BlufiStatusResponse *)response {
+    int status = 0;
+    if ([ response isStaConnectWiFi ] ){
+        status = 1;
+      }
+      }
+    NSString * ssid = response.staSsid;
+    return [NSString stringWithFormat:@"{\"status\": %d,\"ssid\":\"%@\"}",status, ssid];
+}
+
 
 - (void)blufi:(BlufiClient *)client didReceiveDeviceScanResponse:(NSArray<BlufiScanResponse *> *)scanResults status:(BlufiStatusCode)status {
   

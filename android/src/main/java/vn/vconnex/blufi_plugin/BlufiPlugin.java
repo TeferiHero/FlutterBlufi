@@ -452,15 +452,21 @@ public class BlufiPlugin implements FlutterPlugin, ActivityAware, MethodCallHand
       if (status == STATUS_SUCCESS) {
         updateMessage(makeJson("device_status","1"));
 //        updateMessage(String.format("Receive device status response:\n%s"));
-        if (response.isStaConnectWifi()){
-          updateMessage(makeJson("device_wifi_connect","1"));
-        } else {
-          updateMessage(makeJson("device_wifi_connect","0"));
-        }
+          updateMessage(makeJson("device_wifi_connect",makeWifiStatusJson(response)));
       } else {
         updateMessage(makeJson("device_status","0"));
+        updateMessage(makeJson("device_wifi_connect","{\"status\":-1}"));
 //        updateMessage("Device status response error, code=" + status);
       }
+    }
+
+    private String makeWifiStatusJson(BlufiStatusResponse response){
+      int status = 0;
+      if (response.isStaConnectWifi()) {
+        status = 1;
+      }
+      String ssid = response.getStaSSID();
+      return "{ \"status\": " + status.toString() + ", \"ssid\": \"" + ssid +"\"}";
     }
 
     @Override
