@@ -476,7 +476,7 @@ public class BlufiPlugin implements FlutterPlugin, ActivityAware, MethodCallHand
       if (mDevice != null) {
         address = mDevice.getAddress();
       }
-      return String.format("{\"key\":\"%s\",\"value\":%s,\"address\":\"%s\"}", command, data, address);
+      return String.format("{\"key\":\"%s\", \"value\":%s, \"address\":\"%s\"}", command, data, address);
     }
 
     @Override
