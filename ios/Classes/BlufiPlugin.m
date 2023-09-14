@@ -206,10 +206,10 @@
    
     if (status == StatusSuccess) {
         [self updateMessage:[self makeJsonWithCommand:@"device_status" data:@"1"]];
-        [self updateMessage:[self makeJsonWithCommand:@"device_wifi_connect" data: [self makeWifiStatusJson: response] ]];
+        [self updateMessage:[self makeJsonWithObject:@"device_wifi_connect" data: [self makeWifiStatusJson: response] ]];
     } else {
         [self updateMessage:[self makeJsonWithCommand:@"device_status" data:@"0"]];
-        [self updateMessage:[self makeJsonWithCommand:@"device_wifi_connect" data: "{\"status\": -1, \"ssid\": \"\"}" ]];
+        [self updateMessage:[self makeJsonWithObject:@"device_wifi_connect" data: "{\"status\": -1, \"ssid\": \"\"}" ]];
     }
 }
 
@@ -221,6 +221,15 @@
       }
     NSString * ssid = response.staSsid;
     return [NSString stringWithFormat:@"{\"status\": %d,\"ssid\":\"%@\"}",status, ssid];
+}
+
+-(NSString *)makeJsonWithObject:(NSString*)command data:(NSString *)data {
+    NSString *address = @"";
+    if (self.device != nil) {
+        address = self.device.uuid.UUIDString;
+    }
+
+    return [NSString stringWithFormat:@"{\"key\":\"%@\",\"value\":%@,\"address\":\"%@\"}",command, data, address];
 }
 
 

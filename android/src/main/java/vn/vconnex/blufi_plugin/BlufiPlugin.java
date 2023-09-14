@@ -452,10 +452,10 @@ public class BlufiPlugin implements FlutterPlugin, ActivityAware, MethodCallHand
       if (status == STATUS_SUCCESS) {
         updateMessage(makeJson("device_status","1"));
 //        updateMessage(String.format("Receive device status response:\n%s"));
-          updateMessage(makeJson("device_wifi_connect",makeWifiStatusJson(response)));
+          updateMessage(makeJsonWithObject("device_wifi_connect",makeWifiStatusJson(response)));
       } else {
         updateMessage(makeJson("device_status","0"));
-        updateMessage(makeJson("device_wifi_connect","{\"status\":-1}"));
+        updateMessage(makeJsonWithObject("device_wifi_connect","{\"status\":-1}"));
 //        updateMessage("Device status response error, code=" + status);
       }
     }
@@ -466,7 +466,17 @@ public class BlufiPlugin implements FlutterPlugin, ActivityAware, MethodCallHand
         status = 1;
       }
       String ssid = response.getStaSSID();
+
       return "{ \"status\": " + status + ", \"ssid\": \"" + ssid +"\"}";
+    }
+
+    private String makeJsonWithObject(String command, String data) {
+
+      String address = "";
+      if (mDevice != null) {
+        address = mDevice.getAddress();
+      }
+      return String.format("{\"key\":\"%s\",\"value\":%s,\"address\":\"%s\"}", command, data, address);
     }
 
     @Override
