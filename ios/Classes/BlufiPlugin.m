@@ -209,15 +209,14 @@
         [self updateMessage:[self makeJsonWithObject:@"device_wifi_connect" data: [self makeWifiStatusJson: response] ]];
     } else {
         [self updateMessage:[self makeJsonWithCommand:@"device_status" data:@"0"]];
-        [self updateMessage:[self makeJsonWithObject:@"device_wifi_connect" data: "{\"status\": -1, \"ssid\": \"\"}" ]];
+        [self updateMessage:[self makeJsonWithObject:@"device_wifi_connect" data: "@{\"status\": -1, \"ssid\": \"\"}" ]];
     }
 }
 
 -(NSString *)makeWifiStatusJson:(BlufiStatusResponse *)response {
     int status = 0;
-    if ([ response isStaConnectWiFi ] ){
+    if ([response isStaConnectWiFi]){
         status = 1;
-      }
       }
     NSString * ssid = response.staSsid;
     return [NSString stringWithFormat:@"{\"status\": %d,\"ssid\":\"%@\"}",status, ssid];
