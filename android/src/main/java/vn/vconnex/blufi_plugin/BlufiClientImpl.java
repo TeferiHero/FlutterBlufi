@@ -41,8 +41,11 @@ import vn.vconnex.blufi_plugin.security.BlufiCRC;
 import vn.vconnex.blufi_plugin.security.BlufiDH;
 import vn.vconnex.blufi_plugin.security.BlufiMD5;
 
-
 public class BlufiClientImpl implements BlufiParameter {
+
+    static final class BuildConfig {
+        public static final boolean DEBUG = true;
+    }
     private static final String TAG = "BlufiClientImpl";
     private static final boolean DEBUG = BuildConfig.DEBUG;
 

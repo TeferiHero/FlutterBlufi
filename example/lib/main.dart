@@ -16,7 +16,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  String contentJson = 'Unknown';
+  String? contentJson = 'Unknown';
 
   Map<String, dynamic> scanResult = Map<String, dynamic>();
 
@@ -25,7 +25,8 @@ class _MyAppState extends State<MyApp> {
     super.initState();
     initPlatformState();
 
-    BlufiPlugin.instance.onMessageReceived(successCallback: (String data) {
+    BlufiPlugin.instance.onMessageReceived(successCallback: (String? dataNullable) {
+      String data = dataNullable ?? "";
       print("success data: $data");
       setState(() {
         contentJson = data;
@@ -44,7 +45,7 @@ class _MyAppState extends State<MyApp> {
         }
       });
     },
-    errorCallback: (String error) {
+    errorCallback: (String? error) {
 
     });
   }
@@ -54,7 +55,7 @@ class _MyAppState extends State<MyApp> {
     String platformVersion;
     // Platform messages may fail, so we use a try/catch PlatformException.
     try {
-      platformVersion = await BlufiPlugin.instance.platformVersion;
+      platformVersion = (await BlufiPlugin.instance.platformVersion) ?? "";
     } on PlatformException {
       platformVersion = 'Failed to get platform version.';
     }
