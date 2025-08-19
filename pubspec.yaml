@@ -28,7 +28,7 @@ flutter:
   plugin:
     platforms:
       android:
-        package: vn.vconnex.blufi_plugin
+        package: blufi.espressif
         pluginClass: BlufiPlugin
       ios:
         pluginClass: BlufiPlugin

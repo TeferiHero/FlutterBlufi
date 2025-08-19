@@ -1,4 +1,4 @@
-group 'vn.vconnex.blufi_plugin'
+group 'blufi.espressif'
 version '1.0'
 
 buildscript {
@@ -22,9 +22,9 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
-    namespace 'vn.vconnex.blufi_plugin'
+    namespace 'blufi.espressif'
 
-    compileSdkVersion 29
+    compileSdkVersion 36
 
     defaultConfig {
         minSdkVersion 21
