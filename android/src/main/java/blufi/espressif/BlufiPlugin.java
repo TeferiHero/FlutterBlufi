@@ -385,9 +385,9 @@ public class BlufiPlugin implements FlutterPlugin, ActivityAware, MethodCallHand
   private class BlufiCallbackMain extends BlufiCallback {
     @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR2)
     @Override
-    public void onGattPrepared(BlufiClient client, BluetoothGatt gatt, BluetoothGattService service){
+    public void onGattPrepared(BlufiClient client, int status, BluetoothGatt gatt){
 //                               BluetoothGattCharacteristic writeChar, BluetoothGattCharacteristic notifyChar) {
-      if (service == null) {
+      if (status != BlufiCallback.STATUS_SUCCESS) {
         mLog.w("Discover service failed");
         gatt.disconnect();
 //        updateMessage("Discover service failed");
