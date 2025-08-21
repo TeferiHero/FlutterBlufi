@@ -1,4 +1,4 @@
-package vn.vconnex.blufi_plugin.constants;
+package old.blufi_plugin.constants;
 
 public class SettingsConstants {
     public static final String PREF_SETTINGS_NAME = "esp_settings";

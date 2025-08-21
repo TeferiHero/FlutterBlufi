@@ -1,4 +1,4 @@
-package vn.vconnex.blufi_plugin.params;
+package old.blufi_plugin.params;
 
 import java.util.UUID;
 

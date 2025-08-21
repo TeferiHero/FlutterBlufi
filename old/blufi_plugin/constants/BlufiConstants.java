@@ -1,4 +1,4 @@
-package vn.vconnex.blufi_plugin.constants;
+package old.blufi_plugin.constants;
 
 import java.util.UUID;
 

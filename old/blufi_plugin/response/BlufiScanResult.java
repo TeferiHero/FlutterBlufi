@@ -1,4 +1,4 @@
-package vn.vconnex.blufi_plugin.response;
+package old.blufi_plugin.response;
 
 import java.util.Locale;
 

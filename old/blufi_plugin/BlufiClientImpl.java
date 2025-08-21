@@ -1,4 +1,4 @@
-package vn.vconnex.blufi_plugin;
+package old.blufi_plugin;
 
 import android.annotation.TargetApi;
 import android.bluetooth.BluetoothDevice;

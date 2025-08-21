@@ -1,4 +1,4 @@
-package vn.vconnex.blufi_plugin.security;
+package old.blufi_plugin.security;
 
 import java.security.InvalidAlgorithmParameterException;
 import java.security.InvalidKeyException;

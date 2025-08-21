@@ -1,4 +1,4 @@
-package vn.vconnex.blufi_plugin.security;
+package old.blufi_plugin.security;
 
 import java.math.BigInteger;
 import java.security.InvalidAlgorithmParameterException;
