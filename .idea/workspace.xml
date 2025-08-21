@@ -5,25 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4233614-2244-477f-9efb-facfedc95fc3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/vn/vconnex/blufi_plugin/BlufiCallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/old/blufi_plugin/BlufiCallback.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/vn/vconnex/blufi_plugin/BlufiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/old/blufi_plugin/BlufiClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/vn/vconnex/blufi_plugin/BlufiClientImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/old/blufi_plugin/BlufiClientImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/vn/vconnex/blufi_plugin/BlufiLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/old/blufi_plugin/BlufiLog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/vn/vconnex/blufi_plugin/BlufiNotifyData.java" beforeDir="false" afterPath="$PROJECT_DIR$/old/blufi_plugin/BlufiNotifyData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/vn/vconnex/blufi_plugin/BlufiPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/old/blufi_plugin/BlufiPlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/vn/vconnex/blufi_plugin/FrameCtrlData.java" beforeDir="false" afterPath="$PROJECT_DIR$/old/blufi_plugin/FrameCtrlData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/vn/vconnex/blufi_plugin/constants/BlufiConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/old/blufi_plugin/constants/BlufiConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/vn/vconnex/blufi_plugin/constants/SettingsConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/old/blufi_plugin/constants/SettingsConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/vn/vconnex/blufi_plugin/params/BlufiConfigureParams.java" beforeDir="false" afterPath="$PROJECT_DIR$/old/blufi_plugin/params/BlufiConfigureParams.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/vn/vconnex/blufi_plugin/params/BlufiParameter.java" beforeDir="false" afterPath="$PROJECT_DIR$/old/blufi_plugin/params/BlufiParameter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/vn/vconnex/blufi_plugin/response/BlufiScanResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/old/blufi_plugin/response/BlufiScanResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/vn/vconnex/blufi_plugin/response/BlufiStatusResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/old/blufi_plugin/response/BlufiStatusResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/vn/vconnex/blufi_plugin/response/BlufiVersionResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/old/blufi_plugin/response/BlufiVersionResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/vn/vconnex/blufi_plugin/security/BlufiAES.java" beforeDir="false" afterPath="$PROJECT_DIR$/old/blufi_plugin/security/BlufiAES.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/vn/vconnex/blufi_plugin/security/BlufiCRC.java" beforeDir="false" afterPath="$PROJECT_DIR$/old/blufi_plugin/security/BlufiCRC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/vn/vconnex/blufi_plugin/security/BlufiDH.java" beforeDir="false" afterPath="$PROJECT_DIR$/old/blufi_plugin/security/BlufiDH.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/vn/vconnex/blufi_plugin/security/BlufiMD5.java" beforeDir="false" afterPath="$PROJECT_DIR$/old/blufi_plugin/security/BlufiMD5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/blufi/espressif/BlufiPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/blufi/espressif/BlufiPlugin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -394,20 +394,20 @@ public class BlufiPlugin implements FlutterPlugin, ActivityAware, MethodCallHand
         updateMessage(makeJson("discover_service","0"));
         return;
       }
-      if (writeChar == null) {
-        mLog.w("Get write characteristic failed");
-        gatt.disconnect();
-//        updateMessage("Get write characteristic failed");
-        updateMessage(makeJson("get_write_characteristic","0"));
-        return;
-      }
-      if (notifyChar == null) {
-        mLog.w("Get notification characteristic failed");
-        gatt.disconnect();
-//        updateMessage("Get notification characteristic failed");
-        updateMessage(makeJson("get_notification_characteristic","0"));
-        return;
-      }
+//      if (writeChar == null) {
+//        mLog.w("Get write characteristic failed");
+//        gatt.disconnect();
+////        updateMessage("Get write characteristic failed");
+//        updateMessage(makeJson("get_write_characteristic","0"));
+//        return;
+//      }
+//      if (notifyChar == null) {
+//        mLog.w("Get notification characteristic failed");
+//        gatt.disconnect();
+////        updateMessage("Get notification characteristic failed");
+//        updateMessage(makeJson("get_notification_characteristic","0"));
+//        return;
+//      }
       updateMessage(makeJson("discover_service","1"));
 //      updateMessage("Discover service and characteristics success");
 
