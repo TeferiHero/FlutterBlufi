@@ -1,4 +1,4 @@
-package android.src.main.java.blufi.espressif.constants;
+package blufi.espressif.constants;
 
 import java.util.UUID;
 

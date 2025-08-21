@@ -1,4 +1,4 @@
-package android.src.main.java.blufi.espressif;
+package blufi.espressif;
 
 import android.util.Log;
 

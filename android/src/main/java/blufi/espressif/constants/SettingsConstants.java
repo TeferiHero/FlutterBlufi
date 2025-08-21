@@ -1,4 +1,4 @@
-package android.src.main.java.blufi.espressif.constants;
+package blufi.espressif.constants;
 
 public class SettingsConstants {
     public static final String PREF_SETTINGS_NAME = "esp_settings";
