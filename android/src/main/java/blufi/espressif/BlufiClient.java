@@ -11,7 +11,7 @@ import blufi.espressif.response.BlufiStatusResponse;
 import blufi.espressif.response.BlufiVersionResponse;
 
 public class BlufiClient {
-    public static final String VERSION = BuildConfig.VERSION_NAME;
+//    public static final String VERSION = BuildConfig.VERSION_NAME;
 
     private final BlufiClientImpl mImpl;
 

@@ -6,10 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b4233614-2244-477f-9efb-facfedc95fc3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/blufi/espressif/BlufiLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/blufi/espressif/BlufiLog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/blufi/espressif/BlufiPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/blufi/espressif/BlufiPlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/blufi/espressif/constants/BlufiConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/blufi/espressif/constants/BlufiConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/blufi/espressif/constants/SettingsConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/blufi/espressif/constants/SettingsConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/blufi/espressif/BlufiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/blufi/espressif/BlufiClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/blufi/espressif/BlufiClientImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/blufi/espressif/BlufiClientImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
