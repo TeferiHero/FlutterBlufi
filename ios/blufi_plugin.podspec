@@ -25,7 +25,7 @@ A new Flutter plugin.
   s.ios.vendored_libraries = 'Classes/BlufiLibrary/Security/openssl/*{.a}'
 
   # Flutter.framework does not contain a i386 slice.
-  s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386',
+  s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64 i386',
    'ENABLE_BITCODE' => 'NO'}
 end
 
