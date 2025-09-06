@@ -17,6 +17,8 @@ A new Flutter plugin.
   s.public_header_files = 'Classes/**/*.h'
   s.private_header_files = 'Classes/BlufiLibrary/Security/openssl/include/openssl/*{.h,.cpp,.a}', 'Classes/BlufiLibrary/Security/openssl/include/*{.h,.cpp,.a}', 'Classes/BlufiLibrary/Security/openssl/*{.h,.cpp,.a}',
   'Classes/BlufiLibrary/**/*{.h,.cpp,.a}'
+  #s.private_header_files = 'Classes/BlufiLibrary/Security/openssl/include/openssl/*{.h,.cpp}', 'Classes/BlufiLibrary/Security/openssl/include/*{.h,.cpp}', 'Classes/BlufiLibrary/Security/openssl/*{.h,.cpp}',
+  #'Classes/BlufiLibrary/**/*{.h,.cpp}'
   s.dependency 'Flutter'
   s.platform = :ios, '8.0'
   s.ios.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SRCROOT)/../.symlinks/plugins/blufi_plugin/ios/Classes/BlufiLibrary/Security/openssl/include" }
